@@ -1,0 +1,12 @@
+package test01;
+
+import java.io.File;
+
+public class FoodController {
+	Food food = new Food();
+	
+	public void fileSave(String fileName) {
+		File fName = new File("test.txt");
+		fName.createNewFile();
+	}
+}

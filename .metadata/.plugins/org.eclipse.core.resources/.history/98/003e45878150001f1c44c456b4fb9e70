@@ -1,0 +1,17 @@
+package PersonTest;
+
+import test.t240717.object1.AniBook;
+import test.t240717.object1.Book;
+import test.t240717.object1.CookBook;
+import test.t240717.object1.Member;
+
+public class Test {
+	public static void main(String[] args) {
+		Person[] pArr = new Person[3];
+
+		for(int i = 0; i <= pArr.length; i++) {
+			pArr[i] = new Person(i + "번");
+			System.out.println(pArr[i].getName());
+		}
+	}
+}

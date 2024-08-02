@@ -1,0 +1,15 @@
+package Practice;
+
+import java.util.HashMap;
+
+public class c01 {
+	public static void main(String[] args) {
+		HashMap<Integer, String> test = new HashMap<>();
+		test.put(1, "테스트1");
+		test.put(2, "테스트2");
+		test.put(3, "테스트3");
+		test.put(4, "테스트4");
+		
+		test.get(1);
+	}
+}

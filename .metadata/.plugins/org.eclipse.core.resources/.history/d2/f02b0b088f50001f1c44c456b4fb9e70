@@ -1,0 +1,23 @@
+package p.network;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileTest {
+
+	public static void main(String[] args) {
+		FileWriter fw = null;
+		
+		try {
+			fw = new FileWriter("testTest.txt");
+			fw.write("d");
+			fw.write(65);
+			fw.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

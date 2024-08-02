@@ -1,0 +1,9 @@
+package Practice;
+
+import java.util.HashMap;
+
+public class c01 {
+	public static void main(String[] args) {
+		HashMap<Integer, String> test = new HashMap<>();
+	}
+}

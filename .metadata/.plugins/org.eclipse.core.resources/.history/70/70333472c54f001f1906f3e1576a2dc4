@@ -1,0 +1,15 @@
+package Practice;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class c01 {
+	public static void main(String[] args) {
+		int[][] test = new int[4][4];
+		for(int i = 0; i < test.length; i--) {
+			for(int j = 0; j < test.length; j--) {
+				System.out.println("["+i+"]["+j+"]");
+			}
+		}
+	}
+}

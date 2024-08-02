@@ -1,0 +1,17 @@
+package test01;
+
+import java.io.File;
+import java.io.IOException;
+
+public class FoodController {
+	Food food = new Food();
+	
+	public void fileSave(String fileName) {
+		File fName = new File("test.txt");
+		try {
+			fName.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

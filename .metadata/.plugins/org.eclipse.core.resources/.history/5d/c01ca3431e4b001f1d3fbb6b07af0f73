@@ -1,0 +1,11 @@
+package test.t240726.object1;
+
+import java.util.Comparator;
+
+public class AscTitle implements Comparator<Music>{
+
+	@Override
+	public int compare(Music o1, Music o2) {
+		return 0;
+	}
+}

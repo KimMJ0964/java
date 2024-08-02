@@ -1,0 +1,12 @@
+package a05;
+
+public class Member {
+	private String password;
+	private String name;
+	
+	public Member() {}
+	public Member(String password, String name) {
+		this.password = password;
+		this.name = name;
+	}
+}

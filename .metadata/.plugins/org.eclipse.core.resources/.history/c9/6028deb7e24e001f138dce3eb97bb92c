@@ -1,0 +1,38 @@
+package q.thread.chat;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class TCPClient {
+
+	public static void main(String[] args) {
+		try {
+			Socket socket = new Socket("localhost", 3000);
+			
+			// 클라이언트로부터 메세지를 받는 쓰레드
+			ServerReveive receive = new ServerReveive(socket);
+			Thread receiveTask = new Thread(receive);
+			receiveTask.start();
+						
+			// 클라이언트로부터 메세지를 보내는 쓰레드
+			ClientSend send = new ClientSend(socket);
+			Thread sendTask = new Thread(send);
+			sendTask.start();
+			// 클라이언트로부터 메세지를 받는 쓰레드
+			ClientReveive receive = new ClientReveive(socket);
+			Thread receiveTask = new Thread(receive);
+			receiveTask.start();
+						
+			// 클라이언트로부터 메세지를 보내는 쓰레드
+			ServerSend send = new ServerSend(socket);
+			Thread sendTask = new Thread(send);
+			sendTask.start();
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

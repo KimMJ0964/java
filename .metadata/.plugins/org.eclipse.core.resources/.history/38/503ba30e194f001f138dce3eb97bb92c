@@ -1,0 +1,17 @@
+package Practice;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class c01 {
+	public static void main(String[] args) {
+		HashMap<Integer, String> test = new HashMap<>();
+		test.put(1, "테스트1");
+		test.put(2, "테스트2");
+		test.put(5, "테스트3");
+		test.put(4, "테스트4");
+
+		Set a = test.keySet();
+		System.out.println(a);
+	}
+}

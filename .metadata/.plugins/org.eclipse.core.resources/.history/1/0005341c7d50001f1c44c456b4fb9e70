@@ -1,0 +1,42 @@
+package test01;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FoodController {
+	Food food = new Food();
+	
+	public void fileSave(String fileName) {
+		File fName = new File("food.txt");
+		try {
+			fName.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public void fileSave() {
+		// FileWriter : 파일을 직접적으로 연결해서 2byte씩 단위로 출력할 수 있는 기반스트림
+		// BufferedWriter : 속도향상에 도움을 주는 보조스트림
+		
+		try(FileWriter fw = new FileWriter("l_Buffer.txt");
+			BufferedWriter bw = new BufferedWriter(fw);     ) {
+			// 1. 기반스트림 생성
+//			FileWriter fw = new FileWriter("l_Buffer.txt");
+//			
+//			// 2. 보조스트림 생성시 기반스트림 객체를 전달하면서 생성
+//			BufferedWriter bw = new BufferedWriter(fw);
+			
+			bw.write("안녕하세요.\n");
+			bw.write("반갑습니다.");
+			bw.newLine();
+			bw.write("끝");
+			bw.flush();
+			
+			bw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

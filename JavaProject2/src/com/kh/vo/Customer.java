@@ -1,0 +1,44 @@
+package com.kh.vo;
+
+public class Customer {
+	private String name;
+	private int money;
+	private int power;
+	
+	public Customer() {}
+	public Customer(String name, int money, int power) {
+		super();
+		this.name = name;
+		this.money = money;
+		this.power = power;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getMoney() {
+		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	public int getPower() {
+		return power;
+	}
+	public void setPower(int power) {
+		this.power = power;
+	}
+	
+	@Override
+	public String toString() {
+		return "고객님의 성함은 " + this.name + "이며 보유하신 잔액은" + this.money + "입니다.";
+	}
+	
+	public void costMoney(int cost) {
+		int result = this.getMoney() - cost;
+		setMoney(result);
+	}
+}

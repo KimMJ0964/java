@@ -1,0 +1,7 @@
+package Practice;
+
+public class c01 {
+	public static void main(String[] args) {
+		HashMap<Integer, String> test = new HashMap();
+	}
+}

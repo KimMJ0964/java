@@ -1,0 +1,28 @@
+package a05;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+public class MemberController {
+	HashMap map = new HashMap();
+	
+	public boolean joinMembershop(String id, Member m) {
+		return map.put(id, m);
+	}
+	
+	public String login(String id, String password) {
+		return "";
+	}
+	
+	public boolean changePassword(String id, String oldPw, String newPw) {
+		return true;
+	}
+	
+	public void changeName(String id, String newName) {
+		
+	}
+	
+	public TreeMap sameName(String name) {
+		return null;
+	}
+}

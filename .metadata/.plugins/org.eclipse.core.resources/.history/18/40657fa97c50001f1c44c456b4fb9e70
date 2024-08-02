@@ -1,0 +1,9 @@
+package test01;
+
+public class FoodController {
+	Food food = new Food();
+	
+	public void fileSave(String fileName) {
+		
+	}
+}

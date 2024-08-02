@@ -1,0 +1,16 @@
+package p.network;
+
+import java.io.FileWriter;
+
+public class FileTest {
+
+	public static void main(String[] args) {
+		FileWriter fw = null;
+		
+		fw = new FileWriter("test.txt");
+		fw.write(97);
+		fw.write(65);
+		
+	}
+
+}

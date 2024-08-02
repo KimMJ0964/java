@@ -1,0 +1,5 @@
+package Practice.a08;
+
+public class Person {
+	private String name;
+}

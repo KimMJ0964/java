@@ -1,0 +1,8 @@
+package o.collection;
+
+public class Snippet {
+	public static void main(String[] args) {
+		this.name.equals(other.getName()) &&
+	}
+}
+

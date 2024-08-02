@@ -1,0 +1,23 @@
+package PersonTest;
+
+import test.t240717.object1.AniBook;
+import test.t240717.object1.Book;
+import test.t240717.object1.CookBook;
+import test.t240717.object1.Member;
+
+public class Test {
+	public static void main(String[] args) {
+		Person[] pArr = new Person[3];
+		
+		{
+			pArr[0] = new CookBook("백종원의 집밥", "백종원", "tvN", true);
+			pArr[1] = new AniBook("한번 더 해요", "미티", "원모어", 19);
+			pArr[2] = new AniBook("루피의 원피스", "루피", "japan", 12);
+		}
+
+		for(int i = 0; i < pArr.length; i++) {
+			pArr[i].setName(i + "번");
+			System.out.println(pArr[i].getName());
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package test.t240729;
+
+import java.util.Comparator;
+
+public class SortedLottery implements Comparator<Lottery>{
+	
+	@Override
+	public int compare(Lottery o1, Lottery o2) {
+		return 0;
+	}
+}

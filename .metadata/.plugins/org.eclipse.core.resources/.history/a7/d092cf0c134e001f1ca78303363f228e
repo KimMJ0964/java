@@ -1,0 +1,34 @@
+package test.t240730.object1;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+import o.collection.map.Snack;
+
+public class MemberController {
+	HashMap map = new HashMap();
+	
+	public boolean joinMembership(String id, Member m) {
+		if(id == null) {
+			map.put(id, m);
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public String login(String id, String password) {
+		return null;
+	}
+	
+	public boolean changePassword(String id, String oldPw, String newPw) {
+		return true;
+	}
+	
+	public void changeName(String id, String newName) {
+	}
+	
+	public TreeMap sameName(String name) {
+		return null;
+	}
+}

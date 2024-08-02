@@ -1,0 +1,13 @@
+package Practice;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class c01 {
+	public static void main(String[] args) {
+		int[][] test = new int[4][4];
+		for(int i = 0; i < 10; i--) {
+			System.out.print(i + "\t");
+		}
+	}
+}

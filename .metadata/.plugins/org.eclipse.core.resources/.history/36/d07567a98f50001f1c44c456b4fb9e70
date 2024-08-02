@@ -1,0 +1,25 @@
+package p.network;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class Test {
+
+	public static void main(String[] args) {
+			try {
+				int port = 3000;
+				String serverIP = InetAddress.getLocalHost().getHostAddress();
+				
+				Socket socket = new Socket(serverIP, port);
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
+
+}

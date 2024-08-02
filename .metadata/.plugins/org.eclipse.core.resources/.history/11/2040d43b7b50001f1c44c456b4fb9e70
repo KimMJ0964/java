@@ -1,0 +1,12 @@
+package Practice.a08;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyCollection {
+public void test() {
+	ArrayList<Fruit> list = new ArrayList<Fruit>();
+	
+	list.add(new Fruit("사과", "빨강"));
+}
+}

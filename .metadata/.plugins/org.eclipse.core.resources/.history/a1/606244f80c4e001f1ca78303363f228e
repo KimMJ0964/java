@@ -1,0 +1,25 @@
+package test.t240730.object1;
+
+import java.util.HashMap;
+
+public class MemberController {
+	HashMap map = new HashMap();
+	
+	public boolean joinMembership(String id, Member m) {
+		return true;
+	}
+	
+	public String login(String id, String password) {
+		return null;
+	}
+	
+	public boolean changePassword(String id, String oldPw, String newPw) {
+		return true;
+	}
+	
+	public void changeName(String id, String newName) {
+		return null;
+	}
+	
+	
+}

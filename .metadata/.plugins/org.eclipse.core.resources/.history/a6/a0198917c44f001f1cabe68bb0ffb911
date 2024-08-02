@@ -1,0 +1,16 @@
+package Practice;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class c01 {
+	public static int a = 1;
+	public void test() {
+		System.out.println(a++);
+		test();
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

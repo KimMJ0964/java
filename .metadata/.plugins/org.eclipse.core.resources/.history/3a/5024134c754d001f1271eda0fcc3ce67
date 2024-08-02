@@ -1,0 +1,29 @@
+package test.t240729;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class LotteryController {
+	private HashSet lottery = new HashSet();
+	private HashSet win = new HashSet();
+	
+	public boolean insertObject(Lottery l) {
+		return lottery.add(l);
+	}
+	
+	public boolean deleteObject(Lottery l) {
+		return lottery.remove(l);
+	}
+	
+	public HashSet winObject() {
+		return null;
+	}
+	
+	public TreeSet sortedWinObject() {
+		return null;
+	}
+	
+	public boolean searchWinner(Lottery l) {
+		return true;
+	}
+}

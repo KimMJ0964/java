@@ -1,0 +1,36 @@
+package a05;
+
+import java.util.Scanner;
+
+public class MemberMenu {
+	Scanner sc = new Scanner(System.in);
+	MemberController mc = new MemberController();
+	
+	public void mainMenu() {
+		
+	}
+	
+	public void () {
+		
+	}
+	
+	public void () {
+			
+		}
+	
+	public void () {
+		
+	}
+	
+	public void () {
+		
+	}
+	
+	public void () {
+		
+	}
+	
+	public void () {
+		
+	}
+}
